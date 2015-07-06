@@ -1,0 +1,228 @@
+/*primary containers fill the window*/
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*div to anchor header and footer to window*/
+div#everything{
+	background-color: purple;
+	padding: 0 0 100px;
+	position: relative;
+	min-height: 100%;
+	box-sizing: border-box;
+}
+
+div#header{
+	background-color: #FFF;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 44px;
+	width: 100%;
+}
+
+div#content{
+	background-color: #FFF;
+	position: absolute;
+	top: 44px;
+	bottom: 40px;
+	left: 0px;
+	width: 100%;
+}
+
+div#footer{
+	background-color: rgb(242, 242, 242);
+	border-top: 1px solid rgb(228, 228, 228);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 40px;
+	width: 100%;
+}
+
+/*small downward pointing arrow "icon", idea taken directly from www.google.co.uk*/
+span.d_arrow {
+	border-left: 3.6px dashed #FFF;
+	border-right: 3.6px dashed #FFF;
+	border-top: 3.6px solid #000;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/*properties shared by all the link list items*/
+li {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px;
+	display: inline;
+}
+
+/*links in the right area of the header*/
+ul#header_r_links {
+	position: absolute;
+	right: 20px;
+}
+
+ul#header_r_links li {
+	padding: 8px;
+	vertical-align: top;
+}
+
+/*links in the left area of the footer*/
+ul#footer_l_links {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	margin: 10px;
+	padding-left: 8px;
+}
+
+ul#footer_l_links li {
+	padding: 11px;
+}
+
+/*links in the right area of the footer*/
+ul#footer_r_links {
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	margin: 10px;
+}
+
+/*all links toggle opacity, most are plain text with underline*/
+a { 
+	text-decoration: none;
+	color: #000;
+	opacity: 0.65;
+}
+
+a:hover{ 
+	text-decoration: underline;
+	opacity: 0.85;
+}
+
+/*for the three top-rightmost links, known as "icons"*/
+a.icon:hover {
+	text-decoration: none;
+	cursor: default;
+}
+
+/*nudge the 2 image based links down a few px*/
+img.box_icon {
+	position: relative;
+	top: 3px;
+}
+
+img.bell_icon {
+	position: relative;
+	top: 5px;
+}
+
+div#logo {
+	width: 269px;
+	height: 95px;
+	position: fixed;
+	top: 188px;
+	left: 50%;
+	margin-left: -135px;
+}
+
+img#logo {
+	position: absolute;
+	width: 269px;
+	height: 95px;
+}
+
+#country {
+	color: #777;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	position: absolute;
+	left: 216px;
+	bottom: -10px;
+}
+
+div#search {
+	width: 574px;
+	height: 78px;
+	position: fixed;
+	top: 312px;
+	left: 50%;
+	margin-left: -286px;
+	/*border: 1px dashed black;*/
+}
+
+div#buttons {
+	background-color: blue;
+}
+
+div#bar {
+	background-color: red;
+}
+
+input {
+	display: block;
+	height: 30px;
+}
+
+input.button {
+	display: inline;
+	margin-top: 15px;
+
+	background-color: #EFEFEF;
+	font-size: 11px;
+	font-weight: bold;
+	color: #444;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	outline: none;
+}
+
+input.button:hover {
+	border: 1px solid #AAA;
+	color: #000;
+}
+
+input.button:focus {
+	border: 1px solid #1B70EF;
+}
+
+input.text {
+	width: 573px;
+}
+
+input#run {
+	width: 96px;
+	height: 29px;
+	margin-left: 176px;
+}
+
+input#lucky {
+	width: 111px;
+	height: 29px;
+	margin-left: 12px;
+}
+
+input.text {
+	border: 1px solid #CCC;
+	text-indent: 10px;
+	background-image: url(Mic.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 19px 21px;
+}
+
+input.text:hover {
+	border: 1px solid #999;
+}
+
+input.text:focus {
+	
+	outline: none;
+	border: 1px solid #1B70EF;
+}
